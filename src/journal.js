@@ -44,6 +44,10 @@ const retrieveData = () => {
             storeNotes(index, input);
             inputLine.value = ""; // Clear the input field after submission.
             card.querySelector(".inputFields").style.display = "none";
+          } else {
+            alert(
+              "Please type a note before submitting. The field can´t be empty"
+            );
           }
         });
 
