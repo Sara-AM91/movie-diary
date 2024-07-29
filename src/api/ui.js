@@ -1,5 +1,6 @@
 // src/ui.js
-import { storeNotes, deleteItem } from "./api";
+import { storeNotes, deleteItem } from "../api/api.js";
+import { fetchMovies } from "../api/api.js";
 
 export const displayMovies = (movies) => {
   return movies.map((movie) => ({
